@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="linkedList" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/linkedList" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/linkedList" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="linkedList.h" />
+		<Unit filename="linkedList_createList.h" />
+		<Unit filename="linkedList_createListH.h" />
+		<Unit filename="linkedList_decomposeOddEven.h" />
+		<Unit filename="linkedList_destroy.h" />
+		<Unit filename="linkedList_find.h" />
+		<Unit filename="linkedList_functions.h" />
+		<Unit filename="linkedList_getElement.h" />
+		<Unit filename="linkedList_getLength.h" />
+		<Unit filename="linkedList_init.h" />
+		<Unit filename="linkedList_insert.h" />
+		<Unit filename="linkedList_insertA.h" />
+		<Unit filename="linkedList_intersect.h" />
+		<Unit filename="linkedList_merge.h" />
+		<Unit filename="linkedList_print.h" />
+		<Unit filename="linkedList_remove.h" />
+		<Unit filename="linkedList_setCal.h" />
+		<Unit filename="linkedList_subsetJudge.h" />
+		<Unit filename="linkedList_test.cpp" />
+		<Unit filename="linkedList_unique.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

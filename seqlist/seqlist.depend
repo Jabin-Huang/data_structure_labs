@@ -1,0 +1,70 @@
+# depslib dependency file v1.0
+1541472840 source:c:\users\jabin\source\codeblocks\seqlist\seqlist_test.cpp
+	"seqlist.h"
+	<cstdlib>
+
+1541429903 c:\users\jabin\source\codeblocks\seqlist\seqlist.h
+	"seqlist_functions.h"
+
+1541429296 c:\users\jabin\source\codeblocks\seqlist\seqlist_functions.h
+	<iostream>
+	"seqlist_getElement.h"
+	"seqlist_insert.h"
+	"seqlist_remove.h"
+	"seqlist_find.h"
+	"seqlist_search.h"
+	"seqlist_insertA.h"
+	"seqlist_decomposeOddEven.h"
+	"seqlist_intersect.h"
+	"seqlist_intersectA.h"
+	"seqlist_unique.h"
+	"seqlist_randInit.h"
+	"seqlist_mergeToSet.h"
+	"seqlist_union.h"
+	"seqlist_unionA.h"
+	"seqlist_subtraction.h"
+	"seqlist_subtractionA.h"
+	"seqlist_subSetJudge.h"
+	"seqlist_finalTask.h"
+
+1541418742 c:\users\jabin\source\codeblocks\seqlist\seqlist_getelement.h
+
+1541419440 c:\users\jabin\source\codeblocks\seqlist\seqlist_insert.h
+
+1541430184 c:\users\jabin\source\codeblocks\seqlist\seqlist_remove.h
+
+1541419251 c:\users\jabin\source\codeblocks\seqlist\seqlist_find.h
+
+1541415509 c:\users\jabin\source\codeblocks\seqlist\seqlist_search.h
+
+1541470893 c:\users\jabin\source\codeblocks\seqlist\seqlist_inserta.h
+
+1541471299 c:\users\jabin\source\codeblocks\seqlist\seqlist_decomposeoddeven.h
+
+1540819926 c:\users\jabin\source\codeblocks\seqlist\seqlist_intersrct.h
+
+1541419251 c:\users\jabin\source\codeblocks\seqlist\seqlist_unique.h
+
+1541424819 c:\users\jabin\source\codeblocks\seqlist\seqlist_intersect.h
+
+1540889227 c:\users\jabin\source\codeblocks\seqlist\seqlist_randinit.h
+	<cstdlib>
+
+1541420732 c:\users\jabin\source\codeblocks\seqlist\seqlist_merge.h
+
+1541421964 c:\users\jabin\source\codeblocks\seqlist\seqlist_mergetoset.h
+
+1541424836 c:\users\jabin\source\codeblocks\seqlist\seqlist_union.h
+
+1541424836 c:\users\jabin\source\codeblocks\seqlist\seqlist_subtraction.h
+
+1541426230 c:\users\jabin\source\codeblocks\seqlist\seqlist_intersecta.h
+
+1541472541 c:\users\jabin\source\codeblocks\seqlist\seqlist_uniona.h
+
+1541426231 c:\users\jabin\source\codeblocks\seqlist\seqlist_subtractiona.h
+
+1541428404 c:\users\jabin\source\codeblocks\seqlist\seqlist_subsetjudge.h
+
+1541472933 c:\users\jabin\source\codeblocks\seqlist\seqlist_finaltask.h
+

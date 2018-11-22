@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="seqlist" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/seqlist" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/seqlist" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="seqlist.h" />
+		<Unit filename="seqlist_decomposeOddEven.h" />
+		<Unit filename="seqlist_finalTask.h" />
+		<Unit filename="seqlist_find.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="seqlist_functions.h" />
+		<Unit filename="seqlist_getElement.h" />
+		<Unit filename="seqlist_insert.h" />
+		<Unit filename="seqlist_insertA.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="seqlist_intersect.h" />
+		<Unit filename="seqlist_intersectA.h" />
+		<Unit filename="seqlist_mergeToSet.h" />
+		<Unit filename="seqlist_remove.h" />
+		<Unit filename="seqlist_search.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="seqlist_subSetJudge.h" />
+		<Unit filename="seqlist_subtraction.h" />
+		<Unit filename="seqlist_subtractionA.h" />
+		<Unit filename="seqlist_test.cpp" />
+		<Unit filename="seqlist_union.h" />
+		<Unit filename="seqlist_unionA.h" />
+		<Unit filename="seqlist_unique.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
