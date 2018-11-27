@@ -72,6 +72,7 @@ void linkStack::convert(int n, int base) {
 		n /= base;
 	}
 	//新进制下由高到低的各数位，自顶而下保存于栈中；
+	cout << "新进制下的数:  ";
 	while (!empty()) {
 		elementType x;
 		pop(x);
@@ -97,7 +98,6 @@ bool linkStack::paren(const char exp[]) {
 					return false;
 				break;
 			case '}':
-			 
 				if (!pop(x)|| '{' != x)
 					return false;
 				break;
