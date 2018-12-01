@@ -34,7 +34,6 @@ void linkStack::push(elementType x) {
 
 bool linkStack::pop(elementType &x) {
 	if (empty()) {
-		cout << "Õ»¿Õ£¡";
 		return false;
 	}
 	else {
@@ -49,7 +48,6 @@ bool linkStack::pop(elementType &x) {
 
 bool linkStack::top(elementType &x) {
 	if (empty()) {
-		cout << "Õ»¿Õ£¡";
 		return false;
 	}
 	else {
