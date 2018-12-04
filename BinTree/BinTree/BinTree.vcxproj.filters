@@ -15,18 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="seqQueue.h">
+    <ClInclude Include="BinTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="task.h">
+    <ClInclude Include="Traverse.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="linkQueue.h">
+    <ClInclude Include="CreateTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="queue_test.cpp">
+    <ClCompile Include="BinTree_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{6BE0D15C-3C36-4905-A4D6-C2A7A3FE6E4E}</ProjectGuid>
-    <RootNamespace>Queue</RootNamespace>
+    <ProjectGuid>{86E6A793-60AE-4A48-AE3C-4C57DE42AC11}</ProjectGuid>
+    <RootNamespace>BinTree</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -74,7 +74,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -115,12 +115,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="linkQueue.h" />
-    <ClInclude Include="seqQueue.h" />
-    <ClInclude Include="task.h" />
+    <ClInclude Include="BinTree.h" />
+    <ClInclude Include="CreateTree.h" />
+    <ClInclude Include="Traverse.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="queue_test.cpp" />
+    <ClCompile Include="BinTree_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
