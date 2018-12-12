@@ -117,7 +117,7 @@
   <ItemGroup>
     <ClInclude Include="BinTree.h" />
     <ClInclude Include="CreateTree.h" />
-    <ClInclude Include="Traverse.h" />
+    <ClInclude Include="Function.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BinTree_test.cpp" />

@@ -1,22 +1,33 @@
 #include"BinTree.h"
 #include<iostream>
 #include<cstdlib>
+#include "BinTree_test.h"
 
 using namespace std;
 void test1(BinTree T) {
 	cout << "先序遍历: ";
-	T.preOrderTrav(T.TreeRoot(),visit);
+	T.PrintPreOrder(T.TreeRoot());
 	cout << "中序遍历: ";
-	T.inOrderTrav(T.TreeRoot(),visit);
+	T.PrintInOrder(T.TreeRoot());
 	cout << "后序遍历：";
-	T.postOrderTrav(T.TreeRoot(), visit);
+	T.PrintPostOrder(T.TreeRoot());
 }
 void test2(BinTree T) {
 	cout << "中序遍历次序及对应层次数：" << endl;
+	T.PrintInOrder_level(T.TreeRoot(),1);
+}
+
+void test3(BinTree T) {
+
+}
+void test4(BinTree T) {
+
+}
+void test5(BinTree T) {
 
 }
 int main() {
-	BinTree T;
+	BinTree T,T1;
 	while (true) {
 			system("CLS");
 			cout << "0.创建二叉树\n\n";
@@ -45,6 +56,11 @@ int main() {
 			case 8:void test8(BinTree T); break;
 			case 9:void test9(BinTree T); break;
 			case 10:void test10(BinTree T); break;
+			case 11:void test11(BinTree T); break;
+			case 12:void test12(BinTree T); break;
+			case 13:void test13(BinTree T); break;
+			case 14:void test14(BinTree T); break;
+			case 15:void test15(BinTree T); break;
 			default:
 				break;
 			}

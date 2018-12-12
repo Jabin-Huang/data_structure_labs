@@ -18,10 +18,10 @@
     <ClInclude Include="BinTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Traverse.h">
+    <ClInclude Include="CreateTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="CreateTree.h">
+    <ClInclude Include="Function.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

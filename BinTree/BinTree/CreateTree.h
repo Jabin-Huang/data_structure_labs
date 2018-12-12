@@ -30,7 +30,7 @@ bool ReadFileToArray(char filename[], char strLine[100][3], int &nArrlen) {
 	fclose(pf);
 	return true;
 }
-bool BinTree::createTree(node *& root,char strLine[100][3],int nLen,int &nRow) { //递归创建
+bool BinTree::createTree(node *& root,node * par,char strLine[100][3],int nLen,int &nRow) { //递归创建
 	//nLen为结点数(总行数)
 	//nRoww当前行号
 	if (nRow >= nLen || nLen == 0) {
@@ -41,14 +41,15 @@ bool BinTree::createTree(node *& root,char strLine[100][3],int nLen,int &nRow) {
 	root->data = strLine[nRow][0];
 	root->lc = NULL;
 	root->rc = NULL;
+	root->parent = par;
 	int nRowNext = nRow;
 	if (strLine[nRowNext][1] == '1') {
 		nRow++;
-		createTree(root->lc, strLine, nLen, nRow);
+		createTree(root->lc, root, strLine, nLen, nRow);
 	}
 	if (strLine[nRowNext][1] == '1') {
 		nRow++;
-		createTree(root->rc, strLine, nLen, nRow);
+		createTree(root->rc, root, strLine, nLen, nRow);
 	}
 	return true;
 }
