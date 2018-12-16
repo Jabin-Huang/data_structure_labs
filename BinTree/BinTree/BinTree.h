@@ -1,4 +1,8 @@
 #pragma once
+#include<iostream>
+#include<algorithm>
+#include<queue>
+using namespace std;
 
 typedef char elementType;
 typedef struct Node {
@@ -8,7 +12,7 @@ typedef struct Node {
  
 class BinTree {
 private:
-	node *root;
+	node *root=NULL;
 public:
 	bool createTree(node *& root, node * par,char strLine[100][3], int nLen, int &nRow);
 	void PrintPreOrder(node *T);
@@ -23,11 +27,14 @@ public:
 	void nbrinfo(elementType e);
 	bool level(node *T,elementType e,int i);
 	bool empty() { return !root; };
-	node* TreeRoot() { return root; }
+	node*& TreeRoot() { return root; }
 	void convertFromArray(node *&T, elementType A[], int i);
 	void swapLR(node*&T);
 	void copyTree(node *T, node*&T1);
 	void printPath(node*T);
+	void printInLevel(node *T);
+	node* LCA(node *a, node *b);
+	void findLongest(node *T,int step,int &maxx,elementType path[]);
 };
 
 #include"CreateTree.h"

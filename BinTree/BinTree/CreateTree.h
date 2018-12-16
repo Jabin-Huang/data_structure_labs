@@ -2,8 +2,7 @@
 #include<iostream>
 using namespace std;
 
-char strLine[100][3];
-int nArrlen;
+
 
 bool ReadFileToArray(char filename[], char strLine[100][3], int &nArrlen) {
 	//filename为打开的文件名
@@ -25,6 +24,7 @@ bool ReadFileToArray(char filename[], char strLine[100][3], int &nArrlen) {
 	}
 	nArrlen = 0;
 	while (fscanf(pf, "%c %c %c\n", &strLine[nArrlen][0], &strLine[nArrlen][1], &strLine[nArrlen][2]) != EOF) {
+		//cout << strLine[nArrlen][0] << ' ' << strLine[nArrlen][1] << ' ' << strLine[nArrlen][1]<<endl;
 		nArrlen++;
 	}
 	fclose(pf);
@@ -32,22 +32,22 @@ bool ReadFileToArray(char filename[], char strLine[100][3], int &nArrlen) {
 }
 bool BinTree::createTree(node *& root,node * par,char strLine[100][3],int nLen,int &nRow) { //递归创建
 	//nLen为结点数(总行数)
-	//nRoww当前行号
+	//nRow当前行号
 	if (nRow >= nLen || nLen == 0) {
 		return false; //处理完毕或无数据
 	}
-
 	root = new node;
 	root->data = strLine[nRow][0];
 	root->lc = NULL;
 	root->rc = NULL;
 	root->parent = par;
+	//cout << root->data << endl;
 	int nRowNext = nRow;
 	if (strLine[nRowNext][1] == '1') {
 		nRow++;
 		createTree(root->lc, root, strLine, nLen, nRow);
 	}
-	if (strLine[nRowNext][1] == '1') {
+	if (strLine[nRowNext][2] == '1') {
 		nRow++;
 		createTree(root->rc, root, strLine, nLen, nRow);
 	}
