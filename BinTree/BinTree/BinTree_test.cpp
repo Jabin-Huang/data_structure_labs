@@ -74,6 +74,7 @@ void test8(BinTree &T) {
 	cout << "输入一个元素：";
 	elementType x;
 	cin >> x;
+	cin.get();
 	if (!T.level(T.TreeRoot(), x, 1)) {
 		cout << "不存在该元素" << endl;
 	}
@@ -124,6 +125,7 @@ void test12(BinTree &T) {
 }
 
 void test13(BinTree &T) {
+	cout << "层次遍历序列：";
 	T.printInLevel(T.TreeRoot());
 	cin.get();
 }

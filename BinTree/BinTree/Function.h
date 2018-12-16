@@ -95,14 +95,14 @@ void BinTree::nbrinfo(elementType e) {
 	}
 
 	if (addr->parent) {
-		cout << "父结点：" << addr->parent->data << "(" << addr->parent << ")" << endl;
+		cout << "父结点：" << addr->parent->data <<  endl;
 	}
 	else cout << "父结点不存在。" << endl;
 
 	if (addr->parent) {//父节点不存在则是根节点，根节点不存在兄弟结点
 		if (addr->parent->lc == addr) {
 			if (addr->parent->rc) {
-				cout << "其本身为父结点左孩子,它的右兄弟为" << addr->parent->rc->data << " (" << addr->parent->rc << ")" << endl;
+				cout << "其本身为父结点左孩子,它的右兄弟为" << addr->parent->rc->data  << endl;
 			}
 			else {
 				cout << "无兄弟结点" << endl;
@@ -110,7 +110,7 @@ void BinTree::nbrinfo(elementType e) {
 		}
 		else {
 			if (addr->parent->lc) {
-				cout << "其本身为父结点右孩子,它的左兄弟为" << addr->parent->lc->data << " (" << addr->parent->lc << ")" << endl;
+				cout << "其本身为父结点右孩子,它的左兄弟为" << addr->parent->lc->data  << endl;
 			}else{
 				cout << "无兄弟结点" << endl;
 			}
@@ -121,14 +121,14 @@ void BinTree::nbrinfo(elementType e) {
 	}
 
 	if (addr->lc) {
-		cout << "左孩子为" << addr->lc->data << " ("<<addr->rc<<")"<<endl;
+		cout << "右孩子为" << addr->lc->data <<endl;
 	}
 	else {
 		cout << "无左孩子" << endl;
 	}
 	
 	if (addr->rc) {
-		cout << "左孩子为" << addr->rc->data << " (" << addr->rc << ")" << endl;
+		cout << "左孩子为" << addr->rc->data <<  endl;
 	}
 	else {
 		cout << "无右孩子" << endl;
@@ -156,10 +156,10 @@ void BinTree::convertFromArray(node *&T,elementType A[],int i) {
 	T->data = A[i];
 	T->lc = NULL;
 	T->rc = NULL;
-	if (A[2 * i] != 0) {
+	if (A[2 * i] != '^'&&A[2 * i] != 0) { //约定数组有效数据不为0和'^'
 		convertFromArray(T->lc, A, 2 * i );
 	}
-	if (A[2 * i + 1] != 0) {
+	if (A[2 * i + 1] != '^'&&A[2*i+1]!=0) {
 		convertFromArray(T->rc, A, 2 * i + 1);
 	}
 }
