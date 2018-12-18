@@ -48,7 +48,7 @@ void test6() {
 }
 void test7() {
 	cout << "输出广义表表示的树:";
-	T.printList(T.treeRoot(), 0);
+	T.printList(T.treeRoot(), 1);
 	cin.get();
 }
 

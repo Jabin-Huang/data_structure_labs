@@ -95,17 +95,16 @@ void Tree::numOfDegree(node *T,int i,int &ans) {
 //输出广义表表示的树
 void Tree::printList(node *T, int k) {
 	if (T) {
-		if (k == 1) { //当T为firstChild时
+		if (k == 1) { //当T为firstChild或森林根结点时
 			cout << '(' << T->data;
 		}
 		if (k == 2) {//当T为nextSibling时
 			cout << ',' << T->data;
 		}
-		if (k == 0) {
-			cout << T->data;
-		}
 		printList(T->firstChild, 1);
-		cout << ')'; //firstChild的子树输出完成时
+		if (T->nextSibling == NULL) { //当T为以父结点为根的子树的最后一个孩子时
+			cout << ")";
+		}
 		printList(T->nextSibling, 2);
 	}
 }
