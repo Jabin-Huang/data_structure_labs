@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{491F569F-6928-46F8-A7D4-79BB7003AA6B}</ProjectGuid>
-    <RootNamespace>forest</RootNamespace>
+    <ProjectGuid>{E0FFB5B6-3455-42B4-BD5E-3EE71EE94024}</ProjectGuid>
+    <RootNamespace>Sort</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,6 +115,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="sort3.h" />
+    <ClInclude Include="sort_ds.h" />
+    <ClInclude Include="HeapSort.h" />
+    <ClInclude Include="MergeSort.h" />
+    <ClInclude Include="QuickSort.h" />
+    <ClInclude Include="ShellSort.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sort_test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
